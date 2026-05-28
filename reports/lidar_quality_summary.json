@@ -1,0 +1,14 @@
+{
+  "total_lidar_records": 8,
+  "lidar_quality_passed_count": 6,
+  "lidar_quality_failed_count": 2,
+  "lidar_quality_pass_rate": 0.75,
+  "missing_lidar_file_count": 1,
+  "unreadable_lidar_file_count": 0,
+  "missing_required_lidar_columns_count": 0,
+  "low_point_count": 0,
+  "high_point_count": 0,
+  "invalid_numeric_values_count": 1,
+  "nan_or_inf_count": 2,
+  "range_outlier_count": 1
+}

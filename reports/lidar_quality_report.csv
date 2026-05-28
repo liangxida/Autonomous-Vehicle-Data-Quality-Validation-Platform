@@ -1,0 +1,9 @@
+frame_id,lidar_file,lidar_file_exists,lidar_file_readable,has_required_columns,point_count,invalid_numeric_value_count,nan_or_inf_count,mean_range,max_range,range_outlier_count,lidar_quality_passed,failure_reasons
+frame_001,lidar/frame_001.csv,True,True,True,200,0,0,42.5827,82.8783,0,True,passed
+frame_002,lidar/frame_002.csv,True,True,True,200,0,0,43.7942,83.1827,0,True,passed
+frame_003,lidar/frame_003.csv,True,True,True,203,1,2,129.676,17318.776,1,False,invalid_numeric_values;nan_or_inf_values;range_outliers
+frame_004,lidar/frame_004.csv,True,True,True,200,0,0,40.9718,84.5442,0,True,passed
+frame_005,lidar/frame_005.csv,False,False,False,0,0,0,,,0,False,missing_lidar_file
+frame_006,lidar/frame_006.csv,True,True,True,200,0,0,42.6249,83.7852,0,True,passed
+frame_007,lidar/frame_007.csv,True,True,True,200,0,0,42.3983,83.4844,0,True,passed
+frame_008,lidar/frame_008.csv,True,True,True,200,0,0,44.059,82.4652,0,True,passed
