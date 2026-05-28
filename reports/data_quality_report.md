@@ -1,6 +1,6 @@
 # Autonomous Vehicle Data Quality Report
 
-Generated at: 2026-05-28T16:44:14
+Generated at: 2026-05-28T16:52:17
 
 ## Executive Summary
 
@@ -37,6 +37,32 @@ This report summarizes automated data quality checks for an autonomous driving d
 | Image Quality Failures | 3 |
 | Annotation Quality Failures | 2 |
 | LiDAR Quality Failures | 2 |
+
+
+## Scenario Coverage Summary
+
+| Metric | Value |
+|---|---:|
+| Total Labeled Objects | 15 |
+| Average Objects per Frame | 1.875 |
+| Max Objects per Frame | 3 |
+| No-Object Frames | 1 |
+| High Object Density Frames | 1 |
+
+## Object Class Distribution
+
+| Class | Count |
+|---|---:|
+| Vehicle | 13 |
+| Pedestrian | 1 |
+| Cyclist | 1 |
+| Traffic Light | 0 |
+| Traffic Sign | 0 |
+
+## Rare Scenario Combinations
+
+No rare scenarios detected.
+
 
 ## Failed Frame Review Queue
 

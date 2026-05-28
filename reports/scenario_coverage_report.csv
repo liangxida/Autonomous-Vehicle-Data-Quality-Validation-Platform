@@ -1,0 +1,9 @@
+frame_id,weather,time_of_day,location_type,object_count,has_objects,is_high_object_density,vehicle_count,pedestrian_count,cyclist_count,traffic_light_count,traffic_sign_count,scenario_key
+frame_001,clear,day,urban,2,True,False,2,0,0,0,0,clear_day_urban
+frame_002,clear,day,urban,2,True,False,2,0,0,0,0,clear_day_urban
+frame_003,clear,day,urban,3,True,True,1,1,1,0,0,clear_day_urban
+frame_004,cloudy,day,suburban,2,True,False,2,0,0,0,0,cloudy_day_suburban
+frame_005,cloudy,day,suburban,2,True,False,2,0,0,0,0,cloudy_day_suburban
+frame_006,rain,night,urban,0,False,False,0,0,0,0,0,rain_night_urban
+frame_007,rain,night,urban,2,True,False,2,0,0,0,0,rain_night_urban
+frame_008,rain,night,urban,2,True,False,2,0,0,0,0,rain_night_urban

@@ -1,0 +1,60 @@
+{
+  "total_frames": 8,
+  "weather_distribution": {
+    "counts": {
+      "clear": 3,
+      "rain": 3,
+      "cloudy": 2
+    },
+    "percentages": {
+      "clear": 0.375,
+      "rain": 0.375,
+      "cloudy": 0.25
+    }
+  },
+  "time_of_day_distribution": {
+    "counts": {
+      "day": 5,
+      "night": 3
+    },
+    "percentages": {
+      "day": 0.625,
+      "night": 0.375
+    }
+  },
+  "location_type_distribution": {
+    "counts": {
+      "urban": 6,
+      "suburban": 2
+    },
+    "percentages": {
+      "urban": 0.75,
+      "suburban": 0.25
+    }
+  },
+  "scenario_distribution": {
+    "counts": {
+      "clear_day_urban": 3,
+      "rain_night_urban": 3,
+      "cloudy_day_suburban": 2
+    },
+    "percentages": {
+      "clear_day_urban": 0.375,
+      "rain_night_urban": 0.375,
+      "cloudy_day_suburban": 0.25
+    }
+  },
+  "rare_scenarios": [],
+  "total_labeled_objects": 15,
+  "average_objects_per_frame": 1.875,
+  "max_objects_per_frame": 3,
+  "no_object_frame_count": 1,
+  "high_object_density_frame_count": 1,
+  "class_totals": {
+    "vehicle": 13,
+    "pedestrian": 1,
+    "cyclist": 1,
+    "traffic_light": 0,
+    "traffic_sign": 0
+  }
+}

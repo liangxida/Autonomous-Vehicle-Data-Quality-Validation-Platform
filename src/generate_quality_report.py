@@ -12,6 +12,7 @@ COMPLETENESS_REPORT_PATH = REPORT_DIR / "completeness_report.csv"
 IMAGE_QUALITY_REPORT_PATH = REPORT_DIR / "image_quality_report.csv"
 ANNOTATION_QUALITY_REPORT_PATH = REPORT_DIR / "annotation_quality_report.csv"
 LIDAR_QUALITY_REPORT_PATH = REPORT_DIR / "lidar_quality_report.csv"
+SCENARIO_COVERAGE_SUMMARY_PATH = REPORT_DIR / "scenario_coverage_summary.json"
 
 DATA_QUALITY_SUMMARY_PATH = REPORT_DIR / "data_quality_summary.json"
 DATA_QUALITY_REPORT_PATH = REPORT_DIR / "data_quality_report.md"
@@ -146,8 +147,53 @@ def build_summary(
 
     return summary
 
-
+        
 def render_markdown_report(summary: dict, failed_frames: pd.DataFrame) -> str:
+    
+    scenario_section = "Scenario coverage summary is not available."
+
+    if SCENARIO_COVERAGE_SUMMARY_PATH.exists():
+        with SCENARIO_COVERAGE_SUMMARY_PATH.open("r", encoding="utf-8") as f:
+            scenario_summary = json.load(f)
+
+        class_totals = scenario_summary.get("class_totals", {})
+        rare_scenarios = scenario_summary.get("rare_scenarios", [])
+
+        rare_scenario_text = "No rare scenarios detected."
+        if rare_scenarios:
+            rare_scenario_text = "\n".join(
+                [
+                    f'- {item["scenario_key"]}: {item["frame_count"]} frame(s)'
+                    for item in rare_scenarios
+                ]
+            )
+
+        scenario_section = f"""
+## Scenario Coverage Summary
+
+| Metric | Value |
+|---|---:|
+| Total Labeled Objects | {scenario_summary.get("total_labeled_objects", 0)} |
+| Average Objects per Frame | {scenario_summary.get("average_objects_per_frame", 0)} |
+| Max Objects per Frame | {scenario_summary.get("max_objects_per_frame", 0)} |
+| No-Object Frames | {scenario_summary.get("no_object_frame_count", 0)} |
+| High Object Density Frames | {scenario_summary.get("high_object_density_frame_count", 0)} |
+
+## Object Class Distribution
+
+| Class | Count |
+|---|---:|
+| Vehicle | {class_totals.get("vehicle", 0)} |
+| Pedestrian | {class_totals.get("pedestrian", 0)} |
+| Cyclist | {class_totals.get("cyclist", 0)} |
+| Traffic Light | {class_totals.get("traffic_light", 0)} |
+| Traffic Sign | {class_totals.get("traffic_sign", 0)} |
+
+## Rare Scenario Combinations
+
+{rare_scenario_text}
+"""
+        
     failed_frame_table = "No failed frames detected."
 
     if not failed_frames.empty:
@@ -192,6 +238,8 @@ This report summarizes automated data quality checks for an autonomous driving d
 | Image Quality Failures | {summary["image_quality_failed_count"]} |
 | Annotation Quality Failures | {summary["annotation_quality_failed_count"]} |
 | LiDAR Quality Failures | {summary["lidar_quality_failed_count"]} |
+
+{scenario_section}
 
 ## Failed Frame Review Queue
 
