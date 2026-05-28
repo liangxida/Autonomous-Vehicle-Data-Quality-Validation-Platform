@@ -1,0 +1,12 @@
+{
+  "total_annotation_records": 8,
+  "annotation_quality_passed_count": 6,
+  "annotation_quality_failed_count": 2,
+  "annotation_quality_pass_rate": 0.75,
+  "missing_annotation_file_count": 1,
+  "unreadable_annotation_file_count": 0,
+  "total_labeled_objects": 16,
+  "invalid_class_count": 1,
+  "invalid_bbox_count": 2,
+  "frame_id_mismatch_count": 1
+}

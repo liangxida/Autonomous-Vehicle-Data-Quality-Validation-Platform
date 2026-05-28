@@ -1,0 +1,9 @@
+frame_id,annotation_file,annotation_file_exists,annotation_file_readable,object_count,invalid_class_count,invalid_bbox_count,frame_id_mismatch_count,annotation_quality_passed,failure_reasons
+frame_001,annotations/frame_001.csv,True,True,2,0,0,0,True,passed
+frame_002,annotations/frame_002.csv,True,True,2,0,0,0,True,passed
+frame_003,annotations/frame_003.csv,True,True,4,1,2,1,False,invalid_class_label;invalid_bounding_box;frame_id_mismatch
+frame_004,annotations/frame_004.csv,True,True,2,0,0,0,True,passed
+frame_005,annotations/frame_005.csv,True,True,2,0,0,0,True,passed
+frame_006,annotations/frame_006.csv,False,False,0,0,0,0,False,missing_annotation_file
+frame_007,annotations/frame_007.csv,True,True,2,0,0,0,True,passed
+frame_008,annotations/frame_008.csv,True,True,2,0,0,0,True,passed
