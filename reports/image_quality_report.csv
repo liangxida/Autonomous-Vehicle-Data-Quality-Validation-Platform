@@ -1,0 +1,9 @@
+frame_id,camera_file,image_exists,image_readable,image_width,image_height,brightness,contrast,blur_score,image_quality_passed,failure_reasons
+frame_001,images/frame_001.jpg,True,True,640.0,360.0,107.1523,22.5406,152.804,True,passed
+frame_002,images/frame_002.jpg,True,True,640.0,360.0,107.1546,22.5438,155.3381,True,passed
+frame_003,images/frame_003.jpg,True,True,640.0,360.0,107.1551,22.5449,155.0032,True,passed
+frame_004,images/frame_004.jpg,False,False,,,,,,False,missing_image_file
+frame_005,images/frame_005.jpg,True,True,640.0,360.0,107.1557,22.5453,153.8879,True,passed
+frame_006,images/frame_006.jpg,True,True,640.0,360.0,107.1568,22.5499,156.5229,True,passed
+frame_007,images/frame_007.jpg,True,True,640.0,360.0,53.3141,16.1558,209.5737,False,low_contrast
+frame_008,images/frame_008.jpg,True,True,640.0,360.0,53.3218,16.1932,222.2714,False,low_contrast

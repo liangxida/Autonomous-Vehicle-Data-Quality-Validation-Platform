@@ -1,0 +1,9 @@
+drive_id,scene_id,frame_id,timestamp,camera_file,lidar_file,annotation_file,weather,time_of_day,location_type
+drive_001,scene_001,frame_001,2026-05-01T09:00:00,images/frame_001.jpg,lidar/frame_001.csv,annotations/frame_001.csv,clear,day,urban
+drive_001,scene_001,frame_002,2026-05-01T09:00:01,images/frame_002.jpg,lidar/frame_002.csv,annotations/frame_002.csv,clear,day,urban
+drive_001,scene_001,frame_003,2026-05-01T09:00:02,images/frame_003.jpg,lidar/frame_003.csv,annotations/frame_003.csv,clear,day,urban
+drive_001,scene_002,frame_004,2026-05-01T09:00:03,images/frame_004.jpg,lidar/frame_004.csv,annotations/frame_004.csv,cloudy,day,suburban
+drive_001,scene_002,frame_005,2026-05-01T09:00:04,images/frame_005.jpg,lidar/frame_005.csv,annotations/frame_005.csv,cloudy,day,suburban
+drive_002,scene_003,frame_006,2026-05-01T20:30:00,images/frame_006.jpg,lidar/frame_006.csv,annotations/frame_006.csv,rain,night,urban
+drive_002,scene_003,frame_007,2026-05-01T20:30:01,images/frame_007.jpg,lidar/frame_007.csv,annotations/frame_007.csv,rain,night,urban
+drive_002,scene_003,frame_008,,images/frame_008.jpg,lidar/frame_008.csv,annotations/frame_008.csv,rain,night,urban

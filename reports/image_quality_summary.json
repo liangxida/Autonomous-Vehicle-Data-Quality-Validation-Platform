@@ -1,0 +1,15 @@
+{
+  "total_image_records": 8,
+  "image_exists_count": 7,
+  "image_readable_count": 7,
+  "image_quality_passed_count": 5,
+  "image_quality_failed_count": 3,
+  "image_quality_pass_rate": 0.625,
+  "missing_image_file_count": 1,
+  "unreadable_or_corrupted_image_count": 0,
+  "invalid_resolution_count": 0,
+  "underexposed_count": 0,
+  "overexposed_count": 0,
+  "low_contrast_count": 2,
+  "blurry_count": 0
+}

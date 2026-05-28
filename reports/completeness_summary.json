@@ -1,0 +1,11 @@
+{
+  "total_frames": 8,
+  "complete_frames": 4,
+  "incomplete_frames": 4,
+  "completion_rate": 0.5,
+  "missing_timestamp_count": 1,
+  "missing_camera_file_count": 1,
+  "missing_lidar_file_count": 1,
+  "missing_annotation_file_count": 1,
+  "duplicate_frame_id_count": 0
+}
