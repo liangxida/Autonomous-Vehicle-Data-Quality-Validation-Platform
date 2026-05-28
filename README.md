@@ -59,6 +59,12 @@ This project simulates a data quality workflow for autonomous vehicle datasets b
 \- Release-readiness scoring for ML training datasets
 
 
+## Streamlit Dashboard
+
+After running all validation checks:
+
+```bash
+python src/run_all_checks.py
 
 \## Project Structure
 
